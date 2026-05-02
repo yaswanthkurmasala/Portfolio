@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kurmasala Yaswanth | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-orb orb-one"></div>
+  <div class="bg-orb orb-two"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <header class="hero">
+    <nav class="container nav glass">
+      <div class="nav-actions">
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark mode">
+          <span class="theme-toggle-icons" aria-hidden="true">
+            <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+            <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+            </svg>
+          </span>
+        </button>
+      </div>
+    </nav>
+    <div class="container hero-content">
+      <p class="tag">B.TECH EEE STUDENT | ASPIRING SOFTWARE ENGINEER</p>
+      <h1 class="hero-name">KURMASALA YASWANTH</h1>
+      <h2>Building smart and impactful digital experiences.</h2>
+      <p class="intro" id="about">
+        I am Kurmasala Yaswanth, an ambitious Electrical and Electronics Engineering student with strong
+        problem-solving skills and growing expertise in software development, AI applications, and web technologies.
+      </p>
+      <div class="hero-actions">
+        <a class="btn" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a class="btn btn-dark" href="https://github.com/yaswanthkurmasala" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="btn btn-outline" href="mailto:yaswanth2818@gmail.com">Contact Me</a>
+        <a class="btn btn-outline" href="./KURMASALA_YASWANTH_Resume.pdf" download="KURMASALA_YASWANTH_Resume.pdf">Download Resume</a>
+      </div>
+      <div class="stats">
+        <article class="stat-card glass">
+          <h4>2+</h4>
+          <p>Major Projects</p>
+        </article>
+        <article class="stat-card glass">
+          <h4>3</h4>
+          <p>Internship / Leadership Roles</p>
+        </article>
+        <article class="stat-card glass">
+          <h4>2026</h4>
+          <p>B.Tech Graduation Year</p>
+        </article>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section" id="skills">
+      <div class="section-head">
+        <h3>Technical Skills</h3>
+        <p>My current toolkit for building projects end-to-end.</p>
+      </div>
+      <div class="skills-grid">
+        <article class="card glass">
+          <h4>Languages</h4>
+          <p>Java, Python, SQL</p>
+        </article>
+        <article class="card glass">
+          <h4>Web & Database</h4>
+          <p>HTML5, CSS3, JavaScript, MySQL</p>
+        </article>
+        <article class="card glass">
+          <h4>Developer Tools</h4>
+          <p>IntelliJ IDEA, VS Code, Google Colab, Git, GitHub</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-head">
+        <h3>Featured Projects</h3>
+        <p>Selected work focused on practical impact and user experience.</p>
+      </div>
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all" type="button">All</button>
+        <button class="filter-btn" data-filter="web" type="button">Web</button>
+        <button class="filter-btn" data-filter="ai" type="button">AI/LLM</button>
+      </div>
+      <div class="projects">
+        <article class="project-card glass" data-category="web">
+          <span class="project-tag">Web App</span>
+          <h4>Real-Time Weather Application</h4>
+          <p>
+            Responsive weather app with OpenWeatherMap API, GPS-based geolocation, and dynamic weather animations.
+          </p>
+          <a href="https://github.com/yaswanthkurmasala/Weather-App" target="_blank" rel="noopener noreferrer">View Project</a>
+        </article>
+        <article class="project-card glass" data-category="ai">
+          <span class="project-tag">AI / LLM</span>
+          <h4>AI Resume Analyzer</h4>
+          <p>
+            AI-powered resume evaluator using Python, Streamlit, OpenAI API, PDF parsing, and structured prompts.
+          </p>
+          <a href="https://github.com/yaswanthkurmasala/AI-Resume-Analyzer/tree/main/AI%20Resume%20Analyzer" target="_blank" rel="noopener noreferrer">View Project</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split" id="education">
+      <div class="panel glass">
+        <h3>Education</h3>
+        <ul class="timeline">
+          <li>
+            <strong>B.Tech - Electrical and Electronic Engineering</strong>
+            <span>Vishnu Institute of Technology | CGPA: 7.7 | 2022 - 2026</span>
+          </li>
+          <li>
+            <strong>Intermediate - MPC</strong>
+            <span>Tirumala Junior College | 82.9% | 2020 - 2022</span>
+          </li>
+          <li>
+            <strong>SSC</strong>
+            <span>Narayana School | GPA: 10.0 | 2019 - 2020</span>
+          </li>
+        </ul>
+      </div>
+      <div class="panel glass">
+        <h3>Experience & Leadership</h3>
+        <ul class="timeline">
+          <li>
+            <strong>Embedded Systems Intern</strong>
+            <span>Protective Technologies Pvt. Ltd. | May 2025 - Jul 2025</span>
+          </li>
+          <li>
+            <strong>AI-ML Virtual Internship</strong>
+            <span>AWS Academy | Jan 2024 - Mar 2024</span>
+          </li>
+          <li>
+            <strong>IEEE Secretary</strong>
+            <span>Organized events, led volunteers, and managed memberships.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="certificates">
+      <div class="section-head">
+        <h3>Certificates</h3>
+        <p>Continuous learning and skill validation.</p>
+      </div>
+      <div class="certificates">
+        <a href="./certificates/Java_Basic_HackerRank_Certificate.txt" download="Java_Basic_HackerRank_Certificate.txt">
+          Java Basic Certification - HackerRank
+        </a>
+        <a href="./certificates/SQL_for_Beginners_Scaler_Certificate.txt" download="SQL_for_Beginners_Scaler_Certificate.txt">
+          SQL for Beginners Certification - Scaler Academy
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="glass" id="contact">
+    <div class="container footer-content">
+      <p>Phone: 8309548123</p>
+      <p>Email: <a href="mailto:yaswanth2818@gmail.com">yaswanth2818@gmail.com</a></p>
+    </div>
+  </footer>
+  <button id="back-to-top" class="back-to-top" type="button" aria-label="Back to top">↑</button>
+  <script>
+    (function () {
+      const themeToggle = document.getElementById("theme-toggle");
+      const filterButtons = document.querySelectorAll(".filter-btn");
+      const projectCards = document.querySelectorAll(".project-card");
+      const sections = document.querySelectorAll("section[id], footer[id]");
+      const navLinks = document.querySelectorAll(".nav-link");
+      const backToTop = document.getElementById("back-to-top");
+      const cursorGlow = document.querySelector(".cursor-glow");
+      function syncThemeToggleLabel() {
+        var isDark = document.body.classList.contains("dark");
+        themeToggle.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
+      }
+
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "dark") {
+        document.body.classList.add("dark");
+      }
+      syncThemeToggleLabel();
+
+      themeToggle.addEventListener("click", function () {
+        themeToggle.classList.remove("is-animating");
+        void themeToggle.offsetWidth;
+        themeToggle.classList.add("is-animating");
+        window.setTimeout(function () {
+          themeToggle.classList.remove("is-animating");
+        }, 480);
+
+        document.body.classList.toggle("dark");
+        const isDark = document.body.classList.contains("dark");
+        localStorage.setItem("theme", isDark ? "dark" : "light");
+        syncThemeToggleLabel();
+      });
+
+      filterButtons.forEach((button) => {
+        button.addEventListener("click", function () {
+          const filter = this.dataset.filter;
+          filterButtons.forEach((btn) => btn.classList.remove("active"));
+          this.classList.add("active");
+          projectCards.forEach((card) => {
+            const show = filter === "all" || card.dataset.category === filter;
+            card.classList.toggle("hidden", !show);
+          });
+        });
+      });
+
+      const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) entry.target.classList.add("in-view");
+        });
+      }, { threshold: 0.15 });
+
+      document.querySelectorAll(".section, .panel, .project-card, .card, .stat-card").forEach((el) => {
+        sectionObserver.observe(el);
+      });
+
+      const linkObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          navLinks.forEach((link) => link.classList.remove("active-link"));
+          const activeLink = document.querySelector('.nav-link[href="#' + entry.target.id + '"]');
+          if (activeLink) activeLink.classList.add("active-link");
+        });
+      }, { threshold: 0.5 });
+      sections.forEach((section) => linkObserver.observe(section));
+
+      window.addEventListener("scroll", function () {
+        backToTop.classList.toggle("show", window.scrollY > 260);
+      });
+
+      backToTop.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+
+      window.addEventListener("mousemove", function (event) {
+        if (!cursorGlow) return;
+        cursorGlow.style.transform = "translate(" + (event.clientX - 85) + "px, " + (event.clientY - 85) + "px)";
+      });
+    })();
+  </script>
+</body>
+</html>
